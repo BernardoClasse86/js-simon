@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-top: 3rem;
+}
+
+button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    border: 2px solid black;
+    text-transform: uppercase;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+#result {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
+    border: 2px solid black;
+    background-color: gainsboro;
+}
