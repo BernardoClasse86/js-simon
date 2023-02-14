@@ -40,13 +40,14 @@ btnElement.addEventListener ('click', function () {
     
         for (let i = 0; i < userNum.length; i++) {
     
-        if (randomNumbArray.includes(userNum[i])) {
+        // con un controllo pusho solo i numeri inseriti dall'utente che sono presenti nell'array di numeri random ma che nn sono gia stati pushati nell'array dei numeri uguali
+        if (randomNumbArray.includes(userNum[i]) && !equalNumbers.includes(userNum[i])) {
     
             equalNumbers.push(userNum[i])
         }
     }
     
-    resultElement.innerHTML = `You guessed ${equalNumbers.length} of 5 numbers.<br> You picked : ${equalNumbers}`
+    resultElement.innerHTML = `You guessed ${equalNumbers.length} of 5 numbers.<br> You picked : ${equalNumbers.join(', ')}`
     }
 })
 
